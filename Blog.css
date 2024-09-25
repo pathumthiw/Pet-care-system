@@ -162,6 +162,10 @@ footer .footer-logo {
   margin-bottom: 1rem;
 }
 
+footer .footer-logo img{
+  width: 120px;
+  height: 75px;
+}
 footer nav {
   margin-bottom: 1rem;
 }
