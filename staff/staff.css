@@ -22,7 +22,6 @@ nav a{
 .navbar{
     background-color:aquamarine;
 }
-
 a::after{
     content:"";
     position:absolute;
@@ -33,45 +32,19 @@ a::after{
     bottom: 1px;
     transition: 0.5s;
 }
-
-.content{
-    align-items: center;
-
-}
-
-
-.containe , text{
-    position: relative;
-    min-height: 100vh;
-    padding: 50px 100px;
-    font-display: flex;
-    justify-content: left;
-    
-    flex-direction: column;
-    display: flex;
-    
-    
-}
-.containe text{
-    align-items: left;
-    justify-content: left;
-}
-.content img{
-    width: 750px;
-    height: 600px;
-    float: right;
+a:hover::after{
+    width: 100%;
 }
 
 .container{
     width: 100%;
-    max-width: 550px;
+    max-width: 650px;
     padding: 28px;
     margin: 0 28px;
-    border-radius: 1px;
+    border-radius: 10px;
     box-shadow: inset -2px 2px 2px white;
     align-items: center;
-    padding-left: 200px;
-    padding-top: 60px;
+    padding-left: 400px;
 
     
 }
@@ -204,31 +177,12 @@ a::after{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
     background-color: #444;
     color: #fff;
     text-align: center;
     padding: 2rem 0;
-    width: 1250px;
+    width: 1500px;
     height: 220px;
 }
 
@@ -247,7 +201,7 @@ footer nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 0.5rem;
-    row-gap: 20px;
+    row-gap: 50px;
 }
 footer nav a {
     color: #fff;

@@ -1,7 +1,3 @@
-*{
-    margin:0;
-    padding:0;
-}
 .navbar img{
     width:60px;
     height:50px;
@@ -11,9 +7,10 @@
 nav{
     display:flex;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 15px;
     padding:  4px 350px;
     align-items:center;
+    padding-right: 10px;
     
     
 }
@@ -22,6 +19,7 @@ nav a{
     text-decoration: none;
     font-size: 20px;
     padding: 6px 10px 12px 5px;
+    padding-left: 30px;
 }
 .navbar{
     background-color:aquamarine;
@@ -39,6 +37,7 @@ a::after{
 a:hover::after{
     width: 100%;
 }
+
 .profile img{
     float: right;
     padding-left: 100px;
