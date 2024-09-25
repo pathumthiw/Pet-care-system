@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Style for the back-to-top button */
+        #back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        /* Show the button when user scrolls down */
+        #back-to-top.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Your page content goes here -->
+    <h1>Welcome to My Page</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+    <script>
+        // Function to scroll back to the top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show the button when user scrolls down
+        window.addEventListener('scroll', function() {
+            const button = document.getElementById('back-to-top');
+            if (window.scrollY > 200) {
+                button.classList.add('show');
+            } else {
+                button.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
