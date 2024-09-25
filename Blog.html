@@ -5,7 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="Blog.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
     <style>
+        /* Style for the back-to-top button */
+        #back-to-top {
+            width: 50px;
+            height: 30px;
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            color:black;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+            background-color: transparent;
+        }
+        #back-to-top img{
+            width: 40px;
+            height: 40px;
+        }
+
+        /* Show the button when user scrolls down */
+        #back-to-top.show {
+            display: block;
+        }
       * {
           box-sizing: border-box;
       }
@@ -52,6 +78,29 @@
           }
       }
   </style>
+  <!-- Back to top button -->
+  <button id="back-to-top" onclick="scrollToTop()"><img src="../images/arr.png"></button>
+
+  <script>
+      // Function to scroll back to the top
+      function scrollToTop() {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          });
+      }
+
+      // Show the button when user scrolls down
+      window.addEventListener('scroll', function() {
+          const button = document.getElementById('back-to-top');
+          if (window.scrollY > 200) {
+              button.classList.add('show');
+          } else {
+              button.classList.remove('show');
+          }
+      });
+  </script>
+
 </head>
 
 <body>
@@ -115,51 +164,50 @@
   <div>
     <br>
     <br>
-    <a href="#" class="blogbtn" >More</a>
-  <br>
-  <br>
-  
-   
+    <div>
+        <a href="#" class="blogbtn" >More</a>
+    </div>
     
   <br>
+  <br>
+  <br><br>
+   
+  <br>
 
-  <div class="header">
-          <h2>My Blog</h2>
-      </div>
-      <div class="row">
-          <div class="leftcolumn">
-              <div class="card">
-                  <h2>TITLE HEADING</h2>
-                  <h5>Title description, Dec 7, 2017</h5>
-                  <div class="fakeimg" style="height: 200px;">Image</div>
-                  <p>Some text..</p>
-              </div>
-              <!-- Add more blog posts here -->
-          </div>
-          <div class="rightcolumn">
-              <div class="card">
-                  <h2>About Me</h2>
-                  <div class="fakeimg" style="height: 100px;">Image</div>
-                  <p>Some text about me...</p>
-              </div>
-              <div class="b-card">
-                  <h3>Popular Post</h3>
-                  <div class="fakeimg">Image</div>
-                  <br>
-                  <div class="fakeimg">Image</div>
-                  <br>
-                  <div class="fakeimg">Image</div>
-              </div>
-              <div class="b-card">
-                  <h3>Follow Me</h3>
-                  <p>Some text..</p>
-              </div>
-          </div>
-      </div>
-      <div class="footer">
-          <h2>.</h2>
-      </div>
  
+    <div class="header">
+        <h2>Blog Name</h2>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <!-- Blog post content goes here -->
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description : Mon / Date / Year</h5>
+                <div class="fakeimg" style="height:200px;"><input type="file"></div>
+                <p>Some text..</p>
+            </div>
+            <!-- Add more blog posts as needed -->
+        </div>
+        <div class="rightcolumn">
+            <!-- Sidebar content goes here -->
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="fakeimg" style="height:100px;"></div>
+                <p>Some text about me...</p>
+            </div>
+            <!-- Add more sidebar elements (popular posts, follow me, etc.) -->
+        </div>
+    </div>
+    <br>
+    <div >
+        <a href="#" class="blogbtn" >Post</a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
   
     <footer>
       <div class="footer-logo" ><img src="../images\Logo.jpg"></div>
@@ -179,3 +227,4 @@
   </footer>
 
 </body>
+</html>

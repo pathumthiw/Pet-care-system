@@ -141,7 +141,7 @@ a.blogbtn{
   padding-left: 50px;
   padding-right: 50px;
   margin-right: 250px;
-
+  float: right;
 }
 
 .blogbtn:hover, .blogbtn:focus, .blogbtn:active{
@@ -149,6 +149,77 @@ a.blogbtn{
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+/* Reset box model */
+* {
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header styles */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Columns styles */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image placeholder */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 70px;
+}
+
+/* Card styles for blog posts and sidebar elements */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer styles */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+  }
+}
+
 
 footer {
   background-color: #444;
