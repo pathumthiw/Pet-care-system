@@ -43,7 +43,7 @@ a:hover::after{
     padding-left: 100px;
 }
 nav .icon{
-    padding-left: 100px;
+    padding-left: 75px;
     gap:50;
 }
 .banner-card{
@@ -121,7 +121,7 @@ nav .icon{
   }
 .card-cont{
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
 }
 .card-cont p{
