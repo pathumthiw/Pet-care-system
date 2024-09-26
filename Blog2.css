@@ -42,6 +42,8 @@
   h1.bHeader{
       text-align: center;
   }
+
+  
   h2{
       text-align:left;
   }
@@ -52,12 +54,6 @@
     height: 500px;
     margin-right: 300px;
     margin-left: 350px;
-}
-
- .blog2de{
-    margin-right: 20px;
-    margin-left: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -113,7 +109,47 @@ footer {
   
   .Blogimg img{
     width:500px ;
-    height: 200px;
+    height: 150px;
     padding-left: 500px;
     padding-right: 550px;
+  }
+
+  @font-face{
+    font-family: myFont2;
+    src: url(f2.ttf);
+  }
+
+  .blogli h5{
+    font-family: myFont2;
+    font-size: large;
+    margin-left: 20px;
+  }
+
+  .blogli p{
+    margin-left: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  .blogli li{
+    margin-left: 25px;
+  }
+
+  .bdetalign p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .Blogimg2 img{
+    width:600px ;
+    height: 400px;
+    padding-left: 500px;
+    padding-right: 550px;
+  }
+
+  .Blogimg3 img{
+     width: 450px;
+     height: 350px;
+     padding-left: 500px;
+    padding-right: 500px;
   }
