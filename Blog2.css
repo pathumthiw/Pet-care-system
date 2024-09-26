@@ -109,3 +109,11 @@ footer {
   #link-a:visited{
     color:#fff;
   }
+
+  
+  .Blogimg img{
+    width:500px ;
+    height: 200px;
+    padding-left: 500px;
+    padding-right: 550px;
+  }
