@@ -39,17 +39,25 @@ a:hover::after{
 
 
 .pgimage img{
-    width: 750px;
+    width: 650px;
     height: 500px;
 }
 .topic{
     align-items: right;
+    padding-top:10px;
+    padding-bottom: 650px;
+    background-color:honeydew;
+    width: 650px;
+    height: 490px;
+    
 }
 .form-item,.topic{
     float: right;
     padding-bottom:2px;
     padding-right: 150px;
     font-size: 20px;
+    padding-top: 7px;
+    gap: 10px;
 }
 
 footer {
