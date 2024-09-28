@@ -1,0 +1,27 @@
+img{
+    width: 600px;
+    height: 400px;
+    image-resolution: 100%;
+    margin-right:500px;
+    margin-left: 500px;
+}
+@font-face{
+    font-family: myFont2;
+    src: url(f2.ttf);
+  }
+
+ .blogli h4 ,h1{
+    font-family: myFont2;
+    margin-left: 20px;
+  }
+
+  .blogli p{
+    margin-left: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  .blogli h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  
