@@ -1,12 +1,191 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+  include_once 'header.php';
+?>   
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" href="Blog.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
+    
     <style>
+
+        .Bcard{
+            display: flex;
+            justify-content: center;
+            flex-wrap:wrap;
+            gap: 50px;
+            margin-top:45px;
+            align-items: center;
+            padding-left: 50px;
+
+        }
+
+        .Doctor-card{
+            width: 550px;
+            height: 650px;
+            background-color:rgba(197, 229, 224, 0.774);
+            border-radius: 10px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+            rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            overflow: hidden;
+            transition: transform 0.6s ease;
+        }
+        .Doctor-card:hover{
+            transform:translateY(-20px);
+        }
+        .Doctor-card img{
+            width:100%;
+            height:40%;
+            object-fit:cover;
+
+        }
+        .card-details{
+            font-size: 24px;
+            margin-bottom: 10px;
+
+        }
+        .card-details p{
+            font-size: 14px;
+            color: gray;
+            margin-bottom: 20px;
+        }
+        .card-btn{
+            display: inline-block;
+            background-color: blue;
+            color:white;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 8px 16px;
+        }
+
+        p.blogD{
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight:80px;
+            text-align: justify;
+            text-emphasis: none;
+            color: black solid;
+            margin-right: 20px;
+            margin-left: 20px;
+
+        }
+
+        h3.blogHed{
+            text-align: center;
+        }
+
+        p.alin1{
+        text-align: center;
+        }
+
+
+        h2.bh3{
+        margin-left: 200px;
+        color: blue;
+        text-decoration: underline;
+        }
+        a.blogbtn{
+        float: right;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        background: #1E90FF;
+        padding : 15px;
+        text-align: center;
+        text-decoration:none;
+        text-transform: uppercase;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transform;
+        transition-property: box-shadow, transform;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-right: 250px;
+        float: right;
+        }
+
+        .blogbtn:hover, .blogbtn:focus, .blogbtn:active{
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        }
+
+        /* Reset box model */
+        * {
+        box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background: #f1f1f1;
+        }
+
+        /* Header styles */
+        .header {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: white;
+        }
+
+        /* Columns styles */
+        .leftcolumn {
+        float: left;
+        width: 75%;
+        }
+
+        .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+        }
+
+        /* Fake image placeholder */
+        .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 70px;
+        }
+
+        /* Card styles for blog posts and sidebar elements */
+        .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+        }
+
+        /* Clear floats after columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        /* Footer styles */
+        .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+        }
+
+        /* Responsive layout for smaller screens */
+        @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {
+            width: 100%;
+            padding: 0;
+        }
+        }
+
+         #back-to-top img{
+         margin-right: 50px;
+        margin-bottom: 50px;
+        }
+
+
         /* Style for the back-to-top button */
         #back-to-top {
             width: 50px;
@@ -15,7 +194,7 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            color:black;
+            background:red;
             border: none;
             border-radius: 50%;
             padding: 10px;
@@ -209,23 +388,9 @@
     <br>
     <br>
     <br>
-  
-    <footer>
-      <div class="footer-logo" ><img src="../images\Logo.jpg"></div>
-      <nav class="footer-nav">
-          <a href="#">FAQ</a><br> 
-          <a href="#">Contact Us</a><br>
-          <a href="#">About Us</a> 
-           
-      </nav>
-      <div class="social-media">
-          <a href="#"><i class="ri-facebook-fill"></i></a>
-          <a href="#"><i class="ri-linkedin-fill"></i></a>
-          <a href="#"><i class="ri-google-fill"></i></a>
-      </div>
-      <p>Copyright © 2024 Website. All rights reserved.</p>
-      <p><a href="#"id="link-a">Terms & Conditions</a> | <a href="#"id="link-a">Privacy Policy</a></p>
-  </footer>
 
-</body>
-</html>
+    </body>
+  </html>
+<?php
+  include_once 'footer.php';
+?>

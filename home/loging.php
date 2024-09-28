@@ -1,22 +1,6 @@
 <?php
-  include_once 'header.php'
-?>
-
-
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Pet care</title>
-      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
-      <link rel = "stylesheet" href="home.css">
-
-      
-
-  </head>
-  <body>
-      
+  include_once 'header.php';
+?>     
       <div class="banner-card">
               <img src="../images/downlode.jpg">
               <div class="banner-text">
@@ -119,15 +103,9 @@
                 </div>
             </div>
           </div>
-        </div>
-      
-      
-
-
-      
-      
+        </div>    
   </body>
   </html>
 <?php
-  include_once 'footer.php'
+  include_once 'footer.php';
 ?>
