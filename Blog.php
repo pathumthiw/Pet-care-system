@@ -285,17 +285,6 @@
 
 <body>
 
-  <div class="navbar">
-    <nav>
-        <img src="../images/Logo.jpg">
-        <a href="Home">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Services</a>
-        <a href="Teamsa.html">Team</a>
-        <a href="#">Contact Us</a>
-        <a href="Blog.html">Blog</a>
-    </nav>
-</div>
     <h1 class="bHeader">Blogs</h1>
     <br>
     <br>
@@ -352,8 +341,6 @@
   <br>
   <br><br>
    
-  <br>
-
  
     <div class="header">
         <h2>Blog Name</h2>
