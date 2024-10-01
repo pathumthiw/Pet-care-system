@@ -12,7 +12,8 @@
     
     body {
         font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
+        background-color: aqua;
+        
     }
     
     .container {
@@ -22,8 +23,10 @@
     .sidebar {
         width: 250px;
         background-color: #333;
-        color: #fff;
-        padding: 20px;
+        color: #c6cec4;
+        padding-top: 210px;
+        padding-bottom:  215px;
+        padding-left: 30px;
     }
     
     .sidebar h2 {
@@ -39,7 +42,7 @@
     }
     
     .sidebar ul li a {
-        color: #fff;
+        color: #fafafa;
         text-decoration: none;
     }
     
@@ -53,21 +56,25 @@
     }
     
     header {
+        text-align: center;
         margin-bottom: 20px;
     }
     
     .cards {
         display: flex;
         gap: 20px;
+        position: relative;
+        
     }
     
     .card {
-        background-color: #fff;
-        border: 1px solid #ddd;
+        background-color: #98b0a1;
+        border: 1px solid #090101;
         border-radius: 5px;
         padding: 20px;
         flex: 1;
         text-align: center;
+        
     }
     
     .card h3 {
@@ -78,12 +85,25 @@
         font-size: 24px;
         font-weight: bold;
     }
+    .a::after{
+        content:"";
+        position:absolute;
+        background-color: black;
+        height: 3px;
+        width: 0px;
+        left:0px;
+        bottom: 1px;
+        transition: 0.5s;
+    }
+    .a:hover::after{
+        width: 100%;
+    }
     </style>
 </head>
 <body>
     <div class="container">
         <aside class="sidebar">
-            <h2>Admin Panel</h2>
+            <h2>Admin Panel</h2><br><br><br>
             <ul>
                 <li><a href="#">Dashboard</a></li>
                 <li><a href="#">Users Details</a></li>
@@ -94,6 +114,7 @@
             </ul>
         </aside>
         <main class="main-content">
+            
             <header>
                 <h1>Welcome to the Admin Dashboard</h1>
             </header>
@@ -101,16 +122,14 @@
                 <h2>Statistics Overview</h2>
                 <div class="cards">
                     <div class="card">
-                        <h3>Total Users</h3>
-                        <p>1,250</p>
+                        <a href="#"><h3>Users Details</h3></a>  
                     </div>
                     <div class="card">
-                        <h3>Active Users</h3>
-                        <p>950</p>
+                        <a href="#"><h3>Staff Details</h3></a>
                     </div>
                     <div class="card">
-                        <h3>Pending Requests</h3>
-                        <p>25</p>
+                        <a href="#"><h3>Addmin Details</h3></a>
+                        
                     </div>
                 </div>
             </section>
