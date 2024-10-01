@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    
+    .container {
+        display: flex;
+    }
+    
+    .sidebar {
+        width: 250px;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+    }
+    
+    .sidebar h2 {
+        margin-bottom: 20px;
+    }
+    
+    .sidebar ul {
+        list-style: none;
+    }
+    
+    .sidebar ul li {
+        margin: 15px 0;
+    }
+    
+    .sidebar ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .sidebar ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    .main-content {
+        flex: 1;
+        padding: 20px;
+    }
+    
+    header {
+        margin-bottom: 20px;
+    }
+    
+    .cards {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+        flex: 1;
+        text-align: center;
+    }
+    
+    .card h3 {
+        margin-bottom: 10px;
+    }
+    
+    .card p {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Admin Panel</h2>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Users Details</a></li>
+                <li><a href="#">Staff Details</a></li>
+                <li><a href="#">Addmin Details</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>Welcome to the Admin Dashboard</h1>
+            </header>
+            <section class="content">
+                <h2>Statistics Overview</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Total Users</h3>
+                        <p>1,250</p>
+                    </div>
+                    <div class="card">
+                        <h3>Active Users</h3>
+                        <p>950</p>
+                    </div>
+                    <div class="card">
+                        <h3>Pending Requests</h3>
+                        <p>25</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
